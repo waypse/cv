@@ -658,6 +658,42 @@ main {
     transform: rotate(45deg);
 }
 
+.git-mobile {
+    display: flex;
+    position: relative;
+    background: none;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-family: "Klima";
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transform: translateY(100%);
+    transition: transform .8s;
+}
+
+.git-mobile-disabled {
+    cursor: not-allowed;
+}
+
+.git-mobile::after {
+    content: '';
+    top: 0;
+    left: 0;
+    margin-top: 0.2rem;
+    margin-left: 0.25rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-image: url("/images/Arrow.svg");
+    background-repeat: no-repeat;
+    transition: transform .3s;
+}
+
+.git-mobile:hover::after {
+    transform: rotate(45deg);
+}
+
 .img-mobile {
     opacity: 1;
     position: absolute;
@@ -1050,6 +1086,37 @@ svg {
         transition: transform .3s;
     }
     .learn-more:hover::after {
+        transform: rotate(45deg);
+    }
+    .git {
+        display: flex;
+        position: relative;
+        background: none;
+        border: none;
+        color: white;
+        text-decoration: none;
+        font-family: "Klima";
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transform: translateY(100%);
+        transition: transform .8s;
+    }
+    .git-disabled {
+        cursor: not-allowed;
+    }
+    .git::after {
+        content: '';
+        top: 0;
+        left: 0;
+        margin-top: 0.2rem;
+        margin-left: 0.25rem;
+        width: 0.8rem;
+        height: 0.8rem;
+        background-image: url("/images/Arrow.svg");
+        transition: transform .3s;
+    }
+    .git:hover::after {
         transform: rotate(45deg);
     }
     .img {

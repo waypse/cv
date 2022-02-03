@@ -64,6 +64,9 @@ app.get('/english', async (req, res) => {
 })
 
 app.get('/projects', async (req, res) => {
+    if(!req.session.language){
+        req.session.language = "en";
+    }
     let trad;
     if(req.session.language === "fr"){
         trad = french
@@ -86,6 +89,9 @@ app.get('/projects', async (req, res) => {
 })
 
 app.get('/contact', async (req, res) => {
+    if(!req.session.language){
+        req.session.language = "en";
+    }
     let trad;
     if(req.session.language === "fr"){
         trad = french
@@ -100,6 +106,9 @@ app.get('/contact', async (req, res) => {
 })
 
 app.get('/about', async (req, res) => {
+    if(!req.session.language){
+        req.session.language = "en";
+    }
     let trad;
     if(req.session.language === "fr"){
         trad = french
@@ -114,6 +123,9 @@ app.get('/about', async (req, res) => {
 })
 
 app.get('/skills', async (req, res) => {
+    if(!req.session.language){
+        req.session.language = "en";
+    }
     let trad;
     if(req.session.language === "fr"){
         trad = french

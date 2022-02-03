@@ -4,7 +4,8 @@ const projectSchema = new mongoose.Schema({
   name: String,
   message: String,
   pLink: String,
-  id: Number
+  id: Number,
+  gitLink:String
 });
 
 const projects = mongoose.model('projects', projectSchema);

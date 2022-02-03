@@ -7,6 +7,8 @@ let projectTitlesMobile = [...document.querySelectorAll('.project-title-mobile')
 let projectTitles = [...document.querySelectorAll('.project-title')];
 let learnMoresMobile = [...document.querySelectorAll('.learn-more-mobile')];
 let learnMores = [...document.querySelectorAll('.learn-more')];
+let gitsMobile = [...document.querySelectorAll('.git-mobile')];
+let gits = [...document.querySelectorAll('.git')]
 let itemsMobile = [...document.querySelectorAll('.item-mobile')];
 let items = [...document.querySelectorAll('.item')];
 let imagesMobile = [...document.querySelectorAll('.img-mobile')];
@@ -129,6 +131,7 @@ if (window.screen.width > 1000) {
 itemsMobile.forEach((itemMobile, index) => {
     itemMobile.addEventListener('mouseover', () => {
         projectTitlesMobile[index].classList.add('text-fade-mobile');
+        gitsMobile[index].classList.add('text-fade-mobile');
         learnMoresMobile[index].classList.add('text-fade-mobile');
         imagesMobile[index].classList.remove('not-active-brightness-mobile');
         imagesMobile[index].classList.add('active-brightness-mobile');
@@ -138,6 +141,7 @@ itemsMobile.forEach((itemMobile, index) => {
 itemsMobile.forEach((itemMobile, index) => {
     itemMobile.addEventListener('mouseout', () => {
         projectTitlesMobile[index].classList.remove('text-fade-mobile');
+        gitsMobile[index].classList.remove('text-fade-mobile');
         learnMoresMobile[index].classList.remove('text-fade-mobile');
         imagesMobile[index].classList.add('not-active-brightness-mobile');
         imagesMobile[index].classList.remove('active-brightness-mobile');
@@ -147,6 +151,7 @@ itemsMobile.forEach((itemMobile, index) => {
 items.forEach((item, index) => {
     item.addEventListener('mouseover', () => {
         projectTitles[index].classList.add('text-fade');
+        gits[index].classList.add('text-fade');
         learnMores[index].classList.add('text-fade');
         images[index].classList.remove('not-active-brightness');
         images[index].classList.add('active-brightness');
@@ -156,6 +161,7 @@ items.forEach((item, index) => {
 items.forEach((item, index) => {
     item.addEventListener('mouseout', () => {
         projectTitles[index].classList.remove('text-fade');
+        gits[index].classList.remove('text-fade');
         learnMores[index].classList.remove('text-fade');
         images[index].classList.add('not-active-brightness');
         images[index].classList.remove('active-brightness');

@@ -20,7 +20,8 @@
         "title11":"moi !"
     },
     "projects":{
-        "learn":"EN SAVOIR PLUS"
+        "learn":"EN SAVOIR PLUS",
+        "git": "GITHUB"
     },
     "contact":{
         "title1":"ENTRER EN",

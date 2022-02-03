@@ -20,7 +20,8 @@
         "title11":"me !"
     },
     "projects":{
-        "learn":"LEARN MORE"
+        "learn":"LEARN MORE",
+        "git": "GITHUB"
     },
     "contact":{
         "title1":"GET IN",
