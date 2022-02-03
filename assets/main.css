@@ -244,7 +244,7 @@ header {
     position: absolute;
     top: 0;
     width: 100vw;
-    height: 320vh;
+    height: 100vh;
     background-color: black;
     opacity: 0;
     transition: opacity .8s;
@@ -970,6 +970,17 @@ svg {
 }
 
 @media only screen and (min-width: 1000px) {
+    .projects-page-transition {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 320vh;
+        background-color: black;
+        opacity: 0;
+        transition: opacity .8s;
+        z-index: -100;
+    }
     .language-container a{
         color:white;
     }
