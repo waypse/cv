@@ -172,7 +172,7 @@ items.forEach((item, index) => {
 
 window.onload = () => {
     const anchors = [...document.querySelectorAll('a')];
-    const transition_el = document.querySelector('.page-transition');
+    const transition_el = document.querySelector('.project-page-transition');
   
     setTimeout(() => {
       transition_el.classList.remove('page-transition-active');
