@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/waypse.png">
+  <link rel="stylesheet" href="/main.css">
+  <title>Projects / Slava pankov</title>
+</head>
+<body>
+    <header>
+        <a href="/" aria-label="Home" class="logo"></a>
+        <div class="burger_menu_wrapper" id="burger_menu_wrapper">
+            <span class="burger_menu" id="burger_menu"></span>
+        </div>
+    </header>
+    <div class="page-transition"></div>
+    <div class="menu" id="menu">
+        <ol class="menu-links">
+            <li><a href="/about" class="not-active delay0" id="link-1">{{data.menu.about}}</a></li>
+            <li><a href="#" class="inactive-link not-active delay1" id="link-2">{{data.menu.projects}}</a></li>
+            <li><a href="/contact" class="not-active delay2" id="link-3">{{data.menu.contact}}</a></li>
+            <li><a href="/skills" class="not-active delay3" id="link-4">{{data.menu.skills}}</a></li>
+        </ol>
+    </div>
+    <main>
+        <div class="slider">
+            <div class="slider-inner">
+                {% for project in projects %}
+                    <div class="item">
+                        <div class="project">
+                            <div class="text-wrapper"><h1 class="project-title">{{project.message}}</h1></div>
+                            <div class="text-wrapper"><a href={{project.pLink}} class="learn-more">{{data.projects.learn}}</a></div>
+                        </div>
+                        <div class="img fade-in delay{{loop.index}}"></div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="slider-mobile">
+            <div class="slider-inner-mobile">
+                {% for project in projects %}
+                <div class="item-mobile">
+                    <div class="project-mobile">
+                        <div class="text-wrapper"><h1 class="project-title-mobile">{{project.message}}</h1></div>
+                        <div class="text-wrapper"><a href={{project.pLink}} class="learn-more-mobile">{{data.projects.learn}}</a></div>
+                    </div>
+                    <div class="img-mobile fade-in delay{{loop.index}}"></div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+</body>
+<script src="/projects.js"></script>
+</html>

@@ -1,0 +1,36 @@
+{
+    "index":{
+        "title1":"Hi, my name is",
+        "title2":"Slava",
+        "title3":"I'm a Junior developer based",
+        "title4":"in Marseille, France",
+        "title5":"CONTACT ME"
+    },
+    "about":{
+        "title1":"My name is Slava Pankov. I'm a Russian",
+        "title2":"junior developer from Marseille, in France.",
+        "title3":"I fell in love with web development",
+        "title4":"in 2020 and decided to make it my job.",
+        "title5":"Highly motivated person with high",
+        "title6":"attention to detail. I'm in research",
+        "title7":"for a sandwich course to improve my",
+        "title8":"SKILLS",
+        "title9":"Interested ?",
+        "title10":"CONTACT",
+        "title11":"me !"
+    },
+    "projects":{
+        "learn":"LEARN MORE"
+    },
+    "contact":{
+        "title1":"GET IN",
+        "title2":"TOUCH",
+        "resume":"resume"
+    },
+    "menu":{
+        "about":"ABOUT",
+        "projects":"PROJECTS",
+        "contact":"CONTACT",
+        "skills":"SKILLS"
+    }
+}

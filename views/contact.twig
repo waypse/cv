@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="64x64" href="/images/waypse.png">
+  <link rel="stylesheet" href="/main.css">
+  <title>Contact / Slava Pankov</title>
+</head>
+<body>
+    <header>
+        <a href="/" aria-label="Home" class="logo"></a>
+        <div class="burger_menu_wrapper" id="burger_menu_wrapper">
+            <span class="burger_menu" id="burger_menu"></span>
+        </div>
+    </header>
+    <div class="page-transition"></div>
+    <div class="menu" id="menu">
+        <ol class="menu-links">
+            <li><a href="/about" class="not-active delay0" id="link-1">{{data.menu.about}}</a></li>
+            <li><a href="/projects" class="not-active delay1" id="link-2">{{data.menu.projects}}</a></li>
+            <li><a href="" class="inactive-link not-active delay2" id="link-3">{{data.menu.contact}}</a></li>
+            <li><a href="/skills" class="not-active delay3" id="link-4">{{data.menu.skills}}</a></li>
+        </ol>
+    </div>
+    <div class="contact-content">
+        <div class="get-in-touch-container">
+            <div class="text-wrapper"><h1 class="get-in-touch slide-in">{{data.contact.title1}}</h1></div>
+            <div class="text-wrapper"><h1 class="get-in-touch slide-in">{{data.contact.title2}}</h1></div>
+        </div>
+        <div class="mail-line">
+            <div class="status" id="status"></div>
+            <div class="text-wrapper"><p class="mail slide-in" onclick="sendMail()">slavapankov20@gmail.com</p></div>
+        </div>
+        <div class="resume-line">
+            <div class="status-blue" id="status-blue"></div>
+            <div class="text-wrapper"><a href="/cv.pdf"><p class="resume slide-in">{{data.contact.resume}}</p></a></div>
+        </div>
+        <div class="phone-number-container fade-in">
+            <div class="text-wrapper"><div class="phone-number"><a href="tel:+33769059290"> +33 7 69 05 92 90 +33 7 69 05 92 90</a></div></div>
+        </div>
+    </div>  
+</body>
+<script src="/contact.js"></script>
+</html>

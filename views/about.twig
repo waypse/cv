@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/waypse.png">
+  <link rel="stylesheet" href="/main.css">
+  <title>About / Slava pankov</title>
+</head>
+<body>
+    <header>
+        <a href="/" aria-label="Home" class="logo"></a>
+        <div class="burger_menu_wrapper" id="burger_menu_wrapper">
+            <span class="burger_menu" id="burger_menu"></span>
+        </div>
+    </header>
+    <div class="page-transition"></div>
+    <div class="menu" id="menu">
+        <ol class="menu-links">
+            <li><a href="" class="inactive-link not-active delay0" id="link-1">{{data.menu.about}}</a></li>
+            <li><a  href="/projects" class="not-active delay1" id="link-2">{{data.menu.projects}}</a></li>
+            <li><a href="/contact" class="not-active delay2" id="link-3">{{data.menu.contact}}</a></li>
+            <li><a href="/skills" class="not-active delay3" id="link-4">{{data.menu.skills}}</a></li>
+        </ol>
+    </div>
+    <div class="about-content">
+        <div class="about-text">
+            <div class="">
+                <div class="text-wrapper"><p class="pres slide-in delay0" id="text-1">{{data.about.title1}}</p></div>
+                <div class="text-wrapper"><p class="pres slide-in delay0" id="text-2">{{data.about.title2}}</p></div>
+                <div class="text-wrapper"><p class="pres slide-in delay0" id="text-3">{{data.about.title3}}</p></div>
+                <div class="text-wrapper"><p class="pres slide-in delay0" id="text-4">{{data.about.title4}}</p></div>
+            </div>
+            <div class="paragraph">
+                <div class="text-wrapper"><p class="pres slide-in delay1" id="text-5">{{data.about.title5}}</p></div>
+                <div class="text-wrapper"><p class="pres slide-in delay1" id="text-6">{{data.about.title6}}</p></div>
+                <div class="text-wrapper"><p class="pres slide-in delay1" id="text-7">{{data.about.title7}} <a href="/skills" class="small-skills slide-in delay1">{{data.about.title8}}</a>.</p></div>
+            </div>
+            <div class="paragraph">
+                <div class="text-wrapper"><p class="pres slide-in delay2" id="text-8">{{data.about.title9}}</p></div>
+                <div class="text-wrapper"><p class="pres slide-in delay2" id="text-9"><a href="/contact" class="small-contact slide-in delay1">{{data.about.title10}}</a> {{data.about.title11}}</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/about.js"></script>
+</html>

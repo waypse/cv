@@ -1,0 +1,36 @@
+{
+    "index":{
+        "title1":"Salut, mon nom c'est",
+        "title2":"Slava",
+        "title3":"Je suis developpeur Junior basé",
+        "title4":"sur Marseille, France",
+        "title5":"CONTACTEZ MOI"
+    },
+    "about":{
+        "title1":"Je suis Slava Pankov. Je suis un developpeur",
+        "title2":"junior Russe de Marseille, France.",
+        "title3":"J'ai eu un coup de foudre pour le développement en",
+        "title4":"2020 et j'ai décidé d'en faire mon job.",
+        "title5":"Personne très motivée avec une grande",
+        "title6":"attention aux details. Je suis en recherche",
+        "title7":"d'une alternance afin d'améliorer mes",
+        "title8":"COMPETENCES",
+        "title9":"Intéressé ?",
+        "title10":"CONTACTEZ",
+        "title11":"moi !"
+    },
+    "projects":{
+        "learn":"EN SAVOIR PLUS"
+    },
+    "contact":{
+        "title1":"ENTRER EN",
+        "title2":"CONTACT",
+        "resume":"curriculum vitae"
+    },
+    "menu":{
+        "about":"A PROPOS",
+        "projects":"PROJETS",
+        "contact":"CONTACT",
+        "skills":"COMPETENCES"
+    }
+}

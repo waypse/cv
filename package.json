@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "mettre en place les projets",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "slava pankov",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "bson": "^4.6.1",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.1.7",
+    "twig": "^1.15.4"
+  }
+}

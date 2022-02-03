@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="64x64" href="/images/waypse.png">
+  <link rel="stylesheet" href="/main.css">
+  <title>Slava pankov</title>
+</head>
+
+<body>
+    <div class="loading-screen">
+        <img src="/images/waypse.png" alt="Logo" class="loading-logo">
+    </div>
+    <header>
+        <a href="" aria-label="Home" class="logo"></a>
+        <div class="text-wrapper language-container">
+            <a href="/french" class="slide-in delay0 french" id="link-5">Français /</a>
+            <a href="/english" class="slide-in delay0 english" id="link-6">English</a>
+        </div>
+        <div class="burger_menu_wrapper" id="burger_menu_wrapper">
+            <span class="burger_menu" id="burger_menu"></span>
+        </div>
+    </header>
+    <div class="page-transition"></div>
+    <div class="menu" id="menu">
+        <ol class="menu-links">
+            <li><a href="/about" class="not-active delay0" id="link-1">{{data.menu.about}}</a></li>
+            <li><a href="/projects" class="not-active delay1" id="link-2">{{data.menu.projects}}</a></li>
+            <li><a href="/contact" class="not-active delay2" id="link-3">{{data.menu.contact}}</a></li>
+            <li><a href="/skills" class="not-active delay3" id="link-4">{{data.menu.skills}}</a></li>
+        </ol>
+    </div>
+    <div class="index-content">
+        <div class="text">
+            <div class="text-wrapper"><h1 class="slide-in delay0">{{data.index.title1}} <span class="dorian">{{data.index.title2}}</span>.</h1></div>
+            <div class="p-container">        
+                <div class="text-wrapper"><p class="slide-in delay1">{{data.index.title3}}</p></div>
+                <div class="text-wrapper"><p class="slide-in delay1">{{data.index.title4}}</p></div>
+            </div>
+            <div class="text-wrapper"><a href="/contact" class="contact slide-in delay2" id="contact">{{data.index.title5}}</a></div>
+        </div>
+        <div class="text-wrapper"><div class="picture fade-in delay2" id="picture"></div></div>
+        <div class="text-wrapper"><a href="/contact" class="contact-mobile slide-in delay3">{{data.index.title5}}</a></div>
+    </div>
+</body>
+<script src="/index.js"></script>
+</html>
