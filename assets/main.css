@@ -589,8 +589,8 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    width: 740vw;
-    max-width: 200rem;
+    width: 825vw;
+    max-width: 225rem;
     height: 100%;
 }
 
@@ -1027,7 +1027,7 @@ i{
         top: 0;
         left: 0;
         width: 600vw;
-        max-width: 250rem;
+        max-width: 275rem;
         height: 100%;
     }
     .slider-inner {
