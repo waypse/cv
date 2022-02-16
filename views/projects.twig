@@ -48,13 +48,13 @@
         <div class="slider">
             <div class="slider-inner">
                 {% for project in projects %}
-                    <div class="item" id="{{project.id}}">
+                    <div class="item">
                         <div class="project">
                             <div class="text-wrapper"><h1 class="project-title">{{project.message}}</h1></div>
                             <div class="text-wrapper"><a href={{project.pLink}} class="learn-more">{{data.projects.learn}}</a></div>
                             <div class="text-wrapper"><a href={{project.gitLink}} class="git">{{data.projects.git}}</a></div>
                         </div>
-                        <div class="img fade-in delay{{loop.index}}"></div>
+                        <div class="img fade-in delay{{loop.index}}" id="{{project.id}}"></div>
                     </div>
                 {% endfor %}
             </div>
@@ -62,13 +62,13 @@
         <div class="slider-mobile">
             <div class="slider-inner-mobile">
                 {% for project in projects %}
-                    <div class="item-mobile" id="{{project.id}}">
+                    <div class="item-mobile">
                         <div class="project-mobile">
                             <div class="text-wrapper"><h1 class="project-title-mobile">{{project.message}}</h1></div>
                             <div class="text-wrapper"><a href={{project.pLink}} class="learn-more-mobile">{{data.projects.learn}}</a></div>
                             <div class="text-wrapper"><a href={{project.gitLink}} class="git-mobile">{{data.projects.git}}</a></div>
                         </div>
-                        <div class="img-mobile fade-in delay{{loop.index}}"></div>
+                        <div class="img-mobile fade-in delay{{loop.index}}" id="{{project.id}}"></div>
                     </div>
                 {% endfor %}
             </div>
