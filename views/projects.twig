@@ -48,7 +48,7 @@
         <div class="slider">
             <div class="slider-inner">
                 {% for project in projects %}
-                    <div class="item" style="background-image: url(../images/work/{{project.id}}.jpg)">
+                    <div class="item" id="{{project.id}}">
                         <div class="project">
                             <div class="text-wrapper"><h1 class="project-title">{{project.message}}</h1></div>
                             <div class="text-wrapper"><a href={{project.pLink}} class="learn-more">{{data.projects.learn}}</a></div>
@@ -62,7 +62,7 @@
         <div class="slider-mobile">
             <div class="slider-inner-mobile">
                 {% for project in projects %}
-                    <div class="item-mobile" style="background-image: url(../images/work/{{project.id}}.jpg)">
+                    <div class="item-mobile" id="{{project.id}}">
                         <div class="project-mobile">
                             <div class="text-wrapper"><h1 class="project-title-mobile">{{project.message}}</h1></div>
                             <div class="text-wrapper"><a href={{project.pLink}} class="learn-more-mobile">{{data.projects.learn}}</a></div>

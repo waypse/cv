@@ -79,16 +79,16 @@ if(burgerMenu) {
 
 // Slider 
 
-// imagesMobile.forEach((imgM, idx) => {
-//     imgM.style.backgroundImage = `url(../images/work/${idx+1}.jpg)`;
-// });
+imagesMobile.forEach((imgM) => {
+    imgM.style.backgroundImage = `url(../images/work/${parseInt(imgM.id)}.jpg)`;
+});
 
 if (window.screen.width > 1000) {
     window.addEventListener('resize', init);
 
-    // images.forEach((img, idx) => {
-    //     img.style.backgroundImage = `url(../images/work/${idx+1}.jpg)`;
-    // });
+    images.forEach((img) => {
+        img.style.backgroundImage = `url(../images/work/${parseInt(img.id)}.jpg)`;
+    });
 
     function lerp(start, end, t) {
         return start * (1-t) + end * t;
